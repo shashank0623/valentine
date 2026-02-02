@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("images/bg-hearts.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1 {
+  color: #ff4d6d;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #ff4d6d;
+}
+
+.message {
+  font-size: 1.05em;
+  margin: 15px 0;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.gallery img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.buttons {
+  margin-top: 20px;
+  position: relative;
+  height: 60px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.yes {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background-color: #ddd;
+  position: absolute;
+  right: 0;
+}
+
+#response {
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: #ff4d6d;
+}
